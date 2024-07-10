@@ -1,0 +1,7 @@
+React Query or TanStack Query is a powerful async state management for js/ts, react, etc
+It's a data fetching library helps us to fetch, manipulate our data.
+Comes with features like caching, refetching, pagination and so much more.
+
+installation: npm i @tanstack/react-query
+
+also need: npm i json-server -> a mock api library to test react query, we need some api, open docs json-server create folder inside src/api/data.json paste the code from json-server docs and run npx json-server src/api/data.json
