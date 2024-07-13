@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Good vibes, good life",
+      "author": "Vex King"
+    },
+    {
+      "id": 2,
+      "title": "This is not your story",
+      "author": "Savi Sharma"
+    },
+    {
+      "title": "Get a Life",
+      "author": "Sandip Deb",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "Very good book",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "Very helpful, thanks",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "Relaxing stories",
+      "postId": 2
+    },
+    {
+      "body": "nice one",
+      "postId": 1,
+      "id": 3
+    },
+    {
+      "body": "feel free",
+      "postId": 2,
+      "id": 4
+    },
+    {
+      "body": "bye bye",
+      "postId": 3,
+      "id": 5
+    }
+  ],
+  "profile": {
+    "name": "Sandip Deb"
+  }
+}
