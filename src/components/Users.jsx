@@ -40,8 +40,39 @@ const Users = () => {
     setUser(null);
   };
 
+  const postUserData = async (payload) => {
+    try {
+      setLoading(true);
+      const response = await axios.post(
+        "https://jsonplaceholder.typicode.com/users",
+        {
+          name: payload,
+        }
+      );
+      return response;
+    } catch (e) {
+      console.log(e);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const username = formData.get("username");
+    if (!username) return;
+    postUserData(username);
+    e.target.reset();
+  };
+
   return (
     <div>
+      <form action="#" onSubmit={handleSubmit}>
+        <label htmlFor="username">User Name</label>
+        <input type="text" name="username" id="username" />
+        <button type="submit">Add</button>
+      </form>
       <ul>
         {loading ? (
           <p>Loading...</p>
